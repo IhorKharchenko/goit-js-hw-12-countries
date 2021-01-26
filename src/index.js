@@ -14,8 +14,6 @@ const { input, countryList } = refs;
 
 input.addEventListener("input", debounce(countryRequest, 1000));
 
-noticeNotification();
-
 function countryRequest() {
   countryList.innerHTML = "";
   const searchQuery = input.value;
